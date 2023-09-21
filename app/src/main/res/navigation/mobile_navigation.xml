@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_listaFarmacias">
+
+    <fragment
+        android:id="@+id/nav_listaFarmacias"
+        android:name="com.valesoft.exploradordefarmacias.ui.home.HomeFragment"
+        android:label="Listas de Farmacia"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_listaFarmacias_to_nav_detalle"
+            app:destination="@id/nav_detalle" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_mapa"
+        android:name="com.valesoft.exploradordefarmacias.ui.gallery.GalleryFragment"
+        android:label="Mapa"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_configuracion"
+        android:name="com.valesoft.exploradordefarmacias.ui.slideshow.SlideshowFragment"
+        android:label="Configuración"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_salir"
+        android:name="com.valesoft.exploradordefarmacias.ui.salir.Salir"
+        android:label="Salir"
+        tools:layout="@layout/fragment_salir" />
+    <fragment
+        android:id="@+id/nav_detalle"
+        android:name="com.valesoft.exploradordefarmacias.ui.home.DetalleFarmaciaFragment"
+        android:label="Detalle de Farmacia"
+        tools:layout="@layout/fragment_detalle_farmacia" >
+        <action
+            android:id="@+id/action_nav_detalle_to_nav_listaFarmacias"
+            app:destination="@id/nav_listaFarmacias" />
+    </fragment>
+</navigation>

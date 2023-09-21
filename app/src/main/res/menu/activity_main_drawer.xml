@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_listaFarmacias"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Lista de Farmacias" />
+        <item
+            android:id="@+id/nav_mapa"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Mapa" />
+        <item
+            android:id="@+id/nav_configuracion"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Configuracion" />
+        <item
+            android:id="@+id/nav_salir"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Salir" />
+
+    </group>
+</menu>
